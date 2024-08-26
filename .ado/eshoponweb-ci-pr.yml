@@ -41,8 +41,8 @@ stages:
     - task: WorkItemUpdater@3
       inputs:
         workitemsSource: 'Build'
-        workItemType: 'PBI'
-        workItemState: 'Comitted'
-        workItemKanbanState: 'Doing'
+        workItemType: 'ProductBacklogItem'
+        workItemState: 'Committed'
+        workItemKanbanState: 'Develop & Test'
         workItemDone: true
         updateAssignedTo: 'Never'
