@@ -42,7 +42,7 @@ stages:
       inputs:
         workitemsSource: 'Build'
         workItemType: 'ProductBacklogItem'
-        workItemState: 'Committed'
+        workItemState: 'In Progress'
         workItemKanbanState: 'Develop & Test'
         workItemDone: true
         updateAssignedTo: 'Never'
