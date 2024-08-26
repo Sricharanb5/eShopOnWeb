@@ -1,8 +1,14 @@
 #NAME THE PIPELINE SAME AS FILE (WITHOUT ".yml")
 # trigger:
+ trigger:
+   branches:
+     include:
+     - main
 # - main
-
-resources:
+   paths:
+     include:
+     - src/web/*
+   resources:
   repositories:
     - repository: self
       trigger: none
