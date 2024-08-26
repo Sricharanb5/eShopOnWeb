@@ -37,3 +37,12 @@ stages:
         command: 'publish'
         publishWebProjects: true
         arguments: '-o $(Build.ArtifactStagingDirectory)'
+
+    - task: WorkItemUpdater@3
+      inputs:
+        workitemsSource: 'Build'
+        workItemType: 'PBI'
+        workItemState: 'Comitted'
+        workItemKanbanState: 'Doing'
+        workItemDone: true
+        updateAssignedTo: 'Never'
